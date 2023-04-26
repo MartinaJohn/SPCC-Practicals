@@ -1,0 +1,8 @@
+pg1 start 0
+** using *,15
+** l 1,five
+** MATH **
+five dc H'5'
+** MATH **
+** MUL **
+** END **
