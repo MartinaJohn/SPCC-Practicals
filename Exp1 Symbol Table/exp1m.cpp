@@ -30,11 +30,14 @@ void viewTable(vector<char> symbol)
         {
             type.push_back("Identifier");
         }
-        // else if (k<=9){
-        //     type.push_back("Constant");
-        // }else if (k>=21 && k<=28){
-        //     type.push_back("Special symbol");
-
+        else if (k >= 48 && k <= 57)
+        {
+            type.push_back("Constant");
+        }
+        else if (k <= 38)
+        {
+            type.push_back("Special symbol");
+        }
         else
         {
             type.push_back("Operator");
